@@ -1,4 +1,4 @@
-directory "/opt/ceph"
+directory "/opt/ceph" do
   action :create
   recursive true
 end
@@ -10,3 +10,8 @@ end
 execute "run cephdev" do
   command "/bin/bash /opt/cephdev.sh /opt/ceph"
 end
+
+link "/etc/ceph/ceph.conf" do
+  to "/opt/ceph/ceph.conf"
+end
+

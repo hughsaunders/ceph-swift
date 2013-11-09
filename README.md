@@ -1,3 +1,7 @@
+Current Status
+==============
+NON-Functional. I am using SwiftStack's kinetic swift implementation as a template to create a ceph diskfile implementation.
+
 Getting Started
 ===============
 
@@ -8,4 +12,3 @@ Getting Started
  1. `echo "awesome" > test`
  1. `swift upload mycontainer test`
  1. `swift download mycontainer test -o -`
- 1. `for i in {1..4}; do kineticc -P 80${i}0 list objects; done`
