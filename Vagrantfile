@@ -7,6 +7,6 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision :chef_solo do |chef|
     chef.add_recipe "swift"
-    chef.add_recipe "kinetic"
+    chef.add_recipe "ceph"
   end
 end
